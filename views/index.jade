@@ -1,0 +1,17 @@
+//- extends layout
+
+//- block content
+//-   h1= title
+//-   p Welcome to #{title}
+
+html
+	head
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+		script(src='js/script.js')
+	body
+		#screen
+			.logoSwag
+			img.logo(src='img/logo.png')
+			//- put some random logo in the file 
+			form(action='/search')
+				input.godBox(placeholder='Yo me a locations', name='command', method='post')
